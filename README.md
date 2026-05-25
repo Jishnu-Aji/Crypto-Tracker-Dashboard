@@ -1,51 +1,119 @@
 # Crypto Tracker Dashboard
 
-A modern, responsive client‑side web application that tracks live cryptocurrency prices using the **CoinGecko API**.
-
-## Features
-- Real‑time price, market cap, and 24h change for the top 100 coins
-- Search bar with debounce filtering
-- Favorites / watchlist stored in **localStorage**
-- Dark / Light theme toggle (preference saved)
-- Glass‑morphism card UI with hover animations
-- Responsive grid that works on mobile and desktop
-- Graceful loading states and error handling
-
-## Tech Stack
-- **HTML5**
-- **CSS3** (custom variables, dark/light mode, glass‑morphism)
-- **Vanilla JavaScript (ESM)**
-- **Fetch API** for data requests
-- **localStorage** for persistence
-
-## Setup & Development
-1. **Clone the repository** (or copy the folder `web-api`).
-2. Open `index.html` in any modern browser (Chrome, Edge, Firefox). No build step is required.
-3. The app will automatically fetch data from CoinGecko. Ensure you have an internet connection.
-
-## Project Structure
-```
-web-api/
-├─ index.html      # Main page with semantic markup
-├─ styles.css      # Premium CSS (dark/light, glassmorphism, responsive)
-├─ utils.js        # Helper utilities (debounce, number formatting)
-├─ app.js          # Core JS – API, rendering, state management
-└─ README.md       # This file
-```
-
-## Screenshots
-*(Add screenshots here – you can generate mockups with the `generate_image` tool if needed.)*
-
-## Deployment
-The app consists of static files only, so you can host it on any static site provider:
-- **GitHub Pages** – push the folder to a repo and enable Pages.
-- **Netlify** – drag‑and‑drop the folder in the Netlify UI.
-- **Vercel** – create a new project and point it to the repository.
-
-## Credits
-- Data powered by the **CoinGecko API** (https://www.coingecko.com/en/api)
-- Font: **Inter** (Google Fonts)
-- Icons & logos from CoinGecko
+A modern responsive cryptocurrency dashboard built using HTML, CSS, JavaScript, Chart.js, and CoinGecko API.
 
 ---
-*Happy tracking!*
+
+## Live Demo
+
+https://your-vercel-link.vercel.app
+
+---
+
+## Screenshots
+
+### Dashboard Preview
+(Add screenshot here)
+
+---
+
+## Features
+
+- Live cryptocurrency prices
+- Search cryptocurrencies
+- Dark / Light mode
+- Favorite/watchlist system
+- Interactive Bitcoin price chart
+- Fully responsive design
+- Real-time API integration
+- Modern fintech dashboard UI
+- localStorage support
+- Dynamic data rendering
+
+---
+
+## Tech Stack
+
+### Frontend
+- HTML5
+- CSS3
+- JavaScript (Vanilla JS)
+
+### Libraries
+- Chart.js
+
+### API
+- CoinGecko API
+
+---
+
+## API Used
+
+### CoinGecko API
+https://www.coingecko.com/en/api
+
+Example Endpoint:
+
+```bash
+https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd
+```
+
+---
+
+## Chart Integration
+
+Used Chart.js for:
+- Bitcoin price history graph
+- Interactive line chart
+- Responsive chart rendering
+
+---
+
+## Folder Structure
+
+```bash
+crypto-tracker-dashboard/
+│
+├── index.html
+├── style.css
+├── script.js
+├── assets/
+└── README.md
+```
+
+---
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/crypto-tracker-dashboard.git
+```
+
+Open project:
+
+```bash
+cd crypto-tracker-dashboard
+```
+
+Run locally:
+- Open `index.html`
+
+---
+
+## Deployment
+
+Deployed using:
+- Vercel
+
+---
+
+
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
