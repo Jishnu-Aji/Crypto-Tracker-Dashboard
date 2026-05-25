@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crypto Tracker Dashboard</title>
+  <meta name="description" content="Live cryptocurrency price tracker with dark/light mode, search, and favorites. Powered by CoinGecko API." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">CryptoTracker</div>
+    <div class="nav-actions">
+      <input type="text" id="search-input" placeholder="Search coins..." autocomplete="off" />
+      <button id="theme-toggle" aria-label="Toggle Dark/Light Mode">🌙</button>
+    </div>
+  </nav>
+
+  <main>
+    <section id="favorites-section" class="section hidden">
+      <h2>Watchlist</h2>
+      <div id="favorites-grid" class="grid"></div>
+    </section>
+
+    <section id="coins-section" class="section">
+      <div class="chart-container">
+        <canvas id="priceChart"></canvas>
+      </div>
+      <h2>All Coins</h2>
+      <div id="coins-grid" class="grid"></div>
+    </section>
+  </main>
+
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script type="module" src="script.js"></script>
+</body>
+</html>
